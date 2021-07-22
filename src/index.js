@@ -3,14 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de Bootstrap 4 
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'; // Archivo Javascript de Bootstrap 4
 
+import Home from './componentes/home/Home';
+import Servicios from './componentes/servicios/Servicios';
+import Contacto from './componentes/contacto/Contacto';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <div>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/servicios' component={Servicios} />
+        <Route path='/contacto' component={Contacto} />
+      </Switch>
+    </div>
+  </Router>,
   document.getElementById('root')
 );
 
