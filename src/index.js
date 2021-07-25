@@ -5,8 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de Bootstrap 4 
-import '../node_modules/bootstrap/dist/js/bootstrap.min.js'; // Archivo Javascript de Bootstrap 4
+import '../node_modules/jquery/dist/jquery.js'
+import '../node_modules/popper.js/dist/popper.js'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 import Home from './componentes/home/Home';
 import Servicios from './componentes/servicios/Servicios';

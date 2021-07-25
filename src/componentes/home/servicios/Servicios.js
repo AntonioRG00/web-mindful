@@ -1,43 +1,42 @@
 import React from 'react';
+import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
 //import './Slider.css';
 
 class Servicios extends React.Component {
+
     render() {
+        const header1 = <img style={{ width: '100%', height: '240px' }} alt="Card" src='https://arzakpsicologia.es/wp-content/uploads/2020/04/tipos-de-terapia.jpg'/>;
+        const header2 = <img style={{ width: '100%', height: '240px' }} alt="Card" src='https://narapsicologia.es/wp-content/uploads/2020/08/terapia_2_gif_narapsicologia-901x675.jpg' />;
+        const header3 = <img style={{ width: '100%', height: '240px' }} alt="Card" src='https://www.yorokobu.es/wp-content/uploads/2018/11/terapia-pareja.jpg' />;
+        const header4 = <img style={{ width: '100%', height: '240px' }} alt="Card" src='https://d2lcsjo4hzzyvz.cloudfront.net/blog/wp-content/uploads/2020/11/26144509/Terapia-de-pareja-.jpg' />;
+        const footer = <Button className="col-12" label="Seguir leyendo..." style={{ marginRight: '.25em' }} />;
+        
         return (
-            <div className="container servicios mt-4">
-                <div className="row">
-                    <div className="col-lg-4">
-                        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-                        <h2>Servicio 1</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-                        <h2>Servicio 2</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#777" />
-                            <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                        </svg>
-                        <h2>Servicio 3</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
-                    </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-3">
+                    <Card title="Texto terapia 1" subTitle="Subtítulo" style={{ width: '100%' }} footer={footer} header={header1}>
+                        <p className="p-m-0" style={{ lineHeight: '1.5' }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                    </Card>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-3">
+                    <Card title="Texto terapia 2" subTitle="Subtítulo" style={{ width: '100%' }} footer={footer} header={header2}>
+                        <p className="p-m-0" style={{ lineHeight: '1.5' }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                    </Card>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-3">
+                    <Card title="Texto terapia 3" subTitle="Subtítulo" style={{ width: '100%' }} footer={footer} header={header3}>
+                        <p className="p-m-0" style={{ lineHeight: '1.5' }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                    </Card>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mt-3">
+                    <Card title="Texto terapia 4" subTitle="Subtítulo" style={{ width: '100%' }} footer={footer} header={header4}>
+                        <p className="p-m-0" style={{ lineHeight: '1.5' }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                    </Card>
                 </div>
             </div>
         )
